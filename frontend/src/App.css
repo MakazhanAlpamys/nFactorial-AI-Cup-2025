@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f7fb;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: padding 0.3s ease;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.App-header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.App-main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: left;
+  border-left: 4px solid #b91c1c;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Improved Responsive styles */
+@media (min-width: 1440px) {
+  .App {
+    max-width: 1400px;
+  }
+  
+  .App-header h1 {
+    font-size: 2.8rem;
+  }
+  
+  .App-header p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .App-header {
+    min-height: 18vh;
+    padding: 18px;
+  }
+  
+  .App-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .App-header p {
+    font-size: 1.05rem;
+  }
+  
+  .App-main {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    min-height: 15vh;
+    padding: 15px;
+  }
+  
+  .App-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .App-header p {
+    font-size: 1rem;
+  }
+  
+  .App-main {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .App {
+    padding: 0 15px;
+  }
+  
+  .App-header {
+    min-height: 14vh;
+    padding: 12px;
+  }
+  
+  .App-header h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 0 10px;
+  }
+  
+  .App-header {
+    min-height: 12vh;
+    padding: 10px;
+  }
+  
+  .App-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .App-header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .App-header h1 {
+    font-size: 1.3rem;
+  }
+  
+  .App-header p {
+    font-size: 0.85rem;
+  }
+  
+  .error-message {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Dark mode preference support */
+@media (prefers-color-scheme: dark) {
+  .App {
+    background-color: #1a1a2e;
+    color: #f5f5f5;
+  }
+  
+  .App-header {
+    background-color: #16213e;
+  }
+  
+  .error-message {
+    background-color: #420000;
+    color: #ffb3b3;
+    border-left-color: #ff4d4d;
+  }
+}

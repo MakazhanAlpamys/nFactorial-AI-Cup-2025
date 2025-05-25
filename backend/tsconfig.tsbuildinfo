@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/controllers/search.controller.ts","./src/routes/search.ts","./src/services/evaluator-optimizer.service.ts","./src/services/search.service.ts"],"errors":true,"version":"5.6.3"}
